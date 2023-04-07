@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Rajdhani',sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  padding: 20px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.header span {
+  font-size: 20px;
+}
+.header ul {
+  display : flex;
+  gap : 20px;
+}
+.header ul a {
+  text-decoration: none;
+  border: 1.5px solid #555;
+  padding: 5px 10px;
+  color : #333;
+}
+.component {
+  font-size: 30px;
+  height: 87vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.home {
+  background: rgb(214, 223,135);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about {
+  background: rgb(115,139,243);
+}
+.contact {
+  background: palevioletred;
+}
+.service {
+  background: rgb(146,218,198);
+}
+.team {
+  background: rgb(28,246,129);
 }
